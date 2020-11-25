@@ -7,6 +7,7 @@
 
 Creating my personal website with Gatsby. Starting with the Hello-World project.
 
+Added bootstrap: `npm install react-bootstrap bootstrap`
 
 # 🚀 Quick start
 
