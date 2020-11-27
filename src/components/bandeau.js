@@ -1,16 +1,15 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const Bandeau = ({ title, children }) => (
+const Bandeau = ({ title, dark, children }) => (
 
-  <header>
-    <div>
-      <h1>
+    <div className={dark ? "bandeauDark ": "bandeauLight"}>
+      <h1 className={dark ? "h1Dark ": "h1Light"}>
           {title}
       </h1>
       {children}
     </div>
-  </header>
+  
 )
 
 Bandeau.propTypes = {

@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col'
 
 const Skills = () => (
 
-    <Bandeau title="Skill Set">
+    <Bandeau title="Skill Set" dark>
         <Container>
             <Row>
                 Row1

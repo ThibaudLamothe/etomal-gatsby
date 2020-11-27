@@ -1,0 +1,85 @@
+/* _________________________________________ */
+/* General */
+/* _________________________________________ */
+
+html{
+    background-color: #F8F9FA;
+}
+
+
+/* _________________________________________ */
+/* Bandeau */
+/* _________________________________________ */
+
+.bandeauLight, .bandeauDark {
+    padding-top:  1.0875rem;
+    padding-bottom:  3rem;
+    margin: auto;
+}
+
+.bandeauLight {
+    background: #F8F9FA;
+}
+
+.bandeauDark {
+    background: rgb(250, 205, 146);
+}
+
+
+
+.h1Dark, .h1Light {
+    color: rgb(250, 205, 146);
+    text-decoration: none;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.h1Dark {
+    color: #F8F9FA;
+}
+
+
+
+
+/* _________________________________________ */
+/* Accueil */
+/* _________________________________________ */
+
+.homepage-bgimage {
+    background: url(../images/canada.jpg);
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #F8F9FA
+}
+
+
+/* _________________________________________ */
+/* Footer */
+/* _________________________________________ */
+.general {
+    background-color: rgb(250, 205, 146);
+    color: #7c5332;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.footerlinks {
+    color: #7c5332;
+}
+
+.conditions {
+    line-height: normal;
+    font-size: 0.5em;
+    display: flex;
+    margin:auto;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
