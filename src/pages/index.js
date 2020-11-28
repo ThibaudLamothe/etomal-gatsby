@@ -9,7 +9,6 @@ import Contact from "../containers/contact"
 const IndexPage = () => (
 
   <Layout>
-    <div>Hello world!</div>
     <Accueil />
     <Work />
     <Skills />
