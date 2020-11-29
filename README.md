@@ -9,6 +9,9 @@ Creating my personal website with Gatsby. Starting with the Hello-World project.
 
 Added bootstrap: `npm install react-bootstrap bootstrap`
 
+Added [helmet for SEO purpose](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet) : `npm install gatsby-plugin-react-helmet react-helmet`
+
+
 # 🚀 Quick start
 
 1.  **Create a Gatsby site.**

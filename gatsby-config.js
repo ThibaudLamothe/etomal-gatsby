@@ -8,6 +8,9 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Etomal`,
+    description: `Thibaud Lamothe's website. Datascientist @ Intermarché. Scraping Lover. Welcome to my world.`,
+    author: `@thibaud-lamothe`,
+    mail: `hello@etomal.com`,
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-react-helmet`],
 }
