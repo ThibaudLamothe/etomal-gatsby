@@ -6,6 +6,77 @@ html{
     background-color: #F8F9FA;
 }
 
+.surnameTitle{
+    /* background-color: aqua; */
+    max-height: 3em;
+    
+}
+
+.dark{background-color:  rgb(250, 205, 146) ;}
+.veryDark{background-color:  #7c5332 ;}
+.darkT{color:  rgb(250, 205, 146) ;}
+.veryDarkT{color:  #7c5332 ;}
+
+
+/* _________________________________________ */
+/* Navbar */
+/* _________________________________________ */
+
+.nav-link {
+    color: rgba(128, 0, 0, 0.593) !important; 
+    color: #7c5332 ! important;
+}
+
+.nav-link:hover {
+    color:  rgb(250, 205, 146) !important;
+}
+
+.navbar-light .navbar-toggler {
+    color: maroon;
+    border-color: maroon;
+    background-color: #F8F9FA;
+}
+
+.navbar{
+    box-shadow: 0 5px 20px -10px #000;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    background-color: transparent !important;
+    border: none;
+    color: #F8F9FA;
+    z-index: 100;
+    transition: background-color 1s ease 0s;
+ }
+ 
+
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+    background-color: #490D40 !important;
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px grey;
+}
+
+.navbar-brand {
+    border-color: transparent;
+    /* color: rgb(250, 205, 146) !important; */
+    color: #7c5332 ! important;
+    /* color: rgba(128, 0, 0, 0.593) !important;  */
+    font-weight: bold;
+}
+
+.navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    background-color: transparent !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+#collnav{
+    margin-left:5%;
+}
+
 
 /* _________________________________________ */
 /* Bandeau */
@@ -48,11 +119,91 @@ html{
 
 .homepage-bgimage {
     background: url(../images/canada.jpg);
+    
     height: 75vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #F8F9FA
+    color: #F8F9FA;
+}
+
+
+.layer {
+    
+    background-color: rgba(20, 20, 20, 0.45);
+    /* position: absolute;
+    top: 0;
+    left: 0;*/
+    width: 100%; 
+    height: 100%; 
+}
+
+  
+.Typist .Cursor {
+    display: inline-block; }
+    .Typist .Cursor--blinking {
+      opacity: 1;
+      animation: blink 1s linear infinite; }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1; }
+    50% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+
+
+.image{
+    position: relative;
+    width:50px
+}
+.image__img{
+    display: block;
+    width: 100%;
+    opacity: 1;
+}
+.image__img:hover{
+    opacity: 0;
+}
+
+.image__overlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.image__overlay:hover{
+    opacity: 1;
+}
+
+
+/* _________________________________________ */
+/* Work */
+/* _________________________________________ */
+
+.workC{
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    align-items: center;
+    ;
+
+}
+.role {
+    width:70%
+}
+
+/* _________________________________________ */
+/* Contact */
+/* _________________________________________ */
+
+
+.onTheRight{
+    margin-left: inherit;
 }
 
 
