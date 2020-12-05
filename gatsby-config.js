@@ -21,5 +21,17 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `etomal`,
+        start_url: `/`,
+        background_color: `#7c5332`,
+        theme_color: `#7c5332`,
+        display: `minimal-ui`,
+        icon: `src/images/etomal.png`, // This path is relative to the root of the site.
+      },
+    },
   ],
 }

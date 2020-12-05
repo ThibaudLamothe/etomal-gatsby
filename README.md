@@ -7,7 +7,7 @@
 
 Creating my personal website with Gatsby. Starting with the Hello-World project.
 
-- Added bootstrap: `npm install react-bootstrap bootstrap`
+- Added [bootstrap](https://react-bootstrap.github.io/getting-started/introduction): `npm install react-bootstrap bootstrap`
 
 - Added [helmet for SEO purpose](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet) : `npm install gatsby-plugin-react-helmet react-helmet`
 
@@ -15,6 +15,12 @@ Creating my personal website with Gatsby. Starting with the Hello-World project.
   - [Help for blinking](https://github.com/jstejada/react-typist/blob/1a3de27b580e765d310b8f82d46ebef6bec66def/dist/Typist.css)
 
 - Added [Typist-Loop](https://www.npmjs.com/package/react-typist-loop) : `npm install react-typist-loop --save`
+
+- Added [source-filesystem](https://www.gatsbyjs.com/tutorial/part-five/) `npm install gatsby-source-filesystem`
+  
+- Added [yaml parser](https://www.gatsbyjs.com/plugins/gatsby-transformer-yaml/) : `npm install gatsby-transformer-yaml`
+
+- Added [plugin manifest](https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/) : `npm install gatsby-plugin-manifest`
 
 
 # 🚀 Quick start
