@@ -1,0 +1,106 @@
+
+
+- article:
+  date: 29 Novembre 2020
+  publi: Towards Data Science
+  publiPictPath: publi_tds.jpeg
+  pictPath: custom_choropleth.jpeg
+  duree: 11 min
+  tags:
+    - tag1
+    - tag2
+  title:
+    How to create outstanding custom choropleth maps with Plotly and Dash 🌎 
+  subtitle:
+    Make your first steps with GeoJSON files & learn how to build choropleth maps anywhere on the earth. Illustrated with covid open data. 
+  url: 
+    https://towardsdatascience.com/how-to-create-outstanding-custom-choropleth-maps-with-plotly-and-dash-49ac918a5f05
+
+
+- article:
+  date: 11 Octobre 2020
+  publi: Towards Data Science
+  publiPictPath: publi_tds.jpeg
+  pictPath: whales.jpeg
+  duree: 13 min
+  tags:
+    - tag1
+    - tag2
+  title:
+    Whale identification by processing tails as Time Series
+  subtitle:
+    How to help save whales with AI? Using integral curvature and dynamic time warping, let’s deep dive into sperm whales recognition.
+  url: 
+    https://towardsdatascience.com/whale-identification-by-processing-tails-as-time-series-6d8c928d4343
+
+
+
+- article:
+  date: 3 Aout 2020
+  publi: Towards Data Science
+  publiPictPath: publi_tds.jpeg
+  pictPath: deploy_heroku.jpeg
+  duree: 8 min
+  tags:
+    - tag1
+    - tag2
+  title:
+    Deploying Dash or Flask web application on Heroku. Easy CI/CD.
+  subtitle:
+    Developing a python web app on a laptop is great. Making it accessible to everyone is far more satisfying. Let’s discover CI/CD on Heroku!
+  url: 
+    https://towardsdatascience.com/deploying-dash-or-flask-web-application-on-heroku-easy-ci-cd-4111da3170b8
+
+
+- article:
+  date: 8 Juin 2020
+  publi: Towards Data Science
+  publiPictPath: publi_tds.jpeg
+  pictPath: animated_scatter.png
+  duree: 7 min
+  tags:
+    - tag1
+    - tag2
+  title:
+    How to create outstanding animated scatter maps with plotly and dash 
+  subtitle:
+    Animated maps in plotly can be tricky to configure. In this tutorial, you will learn how to proceed step by step, using Covid-19 data.
+  url: 
+    https://towardsdatascience.com/how-to-create-animated-scatter-maps-with-plotly-and-dash-f10bb82d357a
+
+
+- article:
+  date: 3 Aout 2020
+  publi: The Startup
+  publiPictPath: publi_startup.jpeg
+  pictPath: logzero.jpeg
+  duree: 5 min
+  tags:
+    - tag1
+    - tag2
+  title:
+    Why You Should Use Logzero as a Logger in Your Data Science Projects 
+  subtitle:
+    Logging is a sort of improvement for python print statements. Let’s see why, and how the great logzero package helps to make easy and nice… 
+  url: 
+    https://medium.com/swlh/why-you-should-use-logzero-as-a-logger-in-your-data-science-projects-fc06ff9b705c
+
+
+
+- article:
+  date: 18 Mai 2020
+  publi: Towards Data Science
+  publiPictPath: publi_tds.jpeg
+  pictPath: translate_ppt.jpeg
+  duree: 15 min
+  tags:
+    - Automation
+    - PowerPoint
+  title:
+    Using Selenium and deepL to automate the translation of Power Point files
+  subtitle: 
+    Ever wanted to efficiently translate a PowerPoint deck? Discover how to automate such a process with Python!
+  url:
+    https://towardsdatascience.com/using-selenium-and-deepl-to-automate-the-translation-of-power-point-files-3c01f81f113
+  
+  
