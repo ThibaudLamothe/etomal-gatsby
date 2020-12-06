@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Medium from "../components/medium"
+import BlogHead from "../containers/bloghead"
 
 import { graphql } from 'gatsby'
 
@@ -11,8 +12,7 @@ export default function BlogPage({ data }) {
     <Layout>
       <SEO title="Blog" />
       <br></br>
-      <br></br>
-      <br></br>
+      <BlogHead/>
       <div className="medium-blog">
         {
           data.allMediumYaml.edges.map(({ node }, index) => (

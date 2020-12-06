@@ -15,8 +15,8 @@ export default function Header({siteTitle}) {
       <Nav className="ml-auto" id="collnav">
         <Link className="nav-link" to="/">Home</Link>
         <Link className="nav-link" to="/blog">Blog</Link>
-        <Link className="nav-link" to="/portfolio">Portfolio</Link>
-        <Link className="nav-link" to="/scraping">Scraping</Link>
+        {/* <Link className="nav-link" to="/portfolio">Portfolio</Link> */}
+        {/* <Link className="nav-link" to="/scraping">Scraping</Link> */}
       </Nav>
     </Navbar.Collapse>
   </Navbar>
