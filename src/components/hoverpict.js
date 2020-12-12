@@ -1,24 +1,22 @@
 import React from "react"
-import Image from 'react-bootstrap/Image'
 
 function getPicturePath(imgName) {
     const images = require.context('../images/', true);
     return images('./networks/' + imgName)
   }
 
-const HoverPict = ({ pictBack, pictFront, url }) => (
-
-    <div className='image'>
-        <a href={url}>
-            <div className="image__img">
-                <Image src={getPicturePath(pictBack)} width="30px" className="mb-3 mt-3" />
-            </div>
-            <div className="image__overlay">
-                <Image src={getPicturePath(pictFront)}   width="30px" className="mb-3 mt-3" />
-            </div>
-        </a>
-    </div>
-  
+const HoverPict = ({ pictBack, pictFront, url, width=30}) => (
+    <a href={url}>
+        <img alt={pictBack}
+            className="m-2"   
+            width={width + 'px'}
+            src= {getPicturePath(pictBack)} 
+            // onMouseOver = {e => (e.currentTarget.src = getPicturePath(pictFront) )}
+            // onMouseOut  = {e => (e.currentTarget.src = getPicturePath(pictBack ) )}
+            // onFocus=""
+            // onBlur=""
+        /> 
+    </a>
 )
 
 export default HoverPict
