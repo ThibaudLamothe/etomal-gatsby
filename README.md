@@ -22,7 +22,9 @@ Creating my personal website with Gatsby. Starting with the Hello-World project.
 
 - Added [plugin manifest](https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/) : `npm install gatsby-plugin-manifest`
 
-
+- Added [plugin load script](https://www.gatsbyjs.com/plugins/gatsby-plugin-load-script/) : `npm install gatsby-plugin-load-script`
+- For navbar effect
+- 
 # 🚀 Quick start
 
 1.  **Create a Gatsby site.**
