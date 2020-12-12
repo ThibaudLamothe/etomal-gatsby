@@ -9,18 +9,25 @@ import Contact from "../containers/contact"
 import Perso from "../containers/perso"
 import Hobbies from "../containers/hobbies"
 
+
+import Helmet from "react-helmet"
+import { withPrefix } from "gatsby"
+
 const IndexPage = () => (
 
-  <Layout>
+  <Layout navClass="changeNav">
+
     <SEO title="Home" />
-   
+    <Helmet>
+        <script src={withPrefix('navbar.js')} type="text/javascript"></script>
+        <script src={withPrefix('parallax.js')} type="text/javascript"></script>
+    </Helmet>
+
     <Accueil />
     <Perso />
     <Skills />
-    
     <Project />
     <Hobbies />
-    
     <Contact />
   </Layout>
 
