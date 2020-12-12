@@ -6,64 +6,59 @@ html{
     background-color: #F8F9FA;
 }
 
-.surnameTitle{
-    /* background-color: aqua; */
-    max-height: 3em;
-    
-}
-
-.dark{background-color:  rgb(250, 205, 146) ;}
-.veryDark{background-color:  #7c5332 ;}
-.darkT{color:  rgb(250, 205, 146) ;}
-.veryDarkT{color:  #7c5332 ;}
+.dark{background-color:  rgb(250, 205, 146) !important;}
+.veryDark{background-color:  #7c5332 !important;}
+.darkT{color:  rgb(250, 205, 146) !important;}
+.veryDarkT{color:  #7c5332 !important;}
 
 
 /* _________________________________________ */
 /* Navbar */
 /* _________________________________________ */
 
-.nav-link {
-    color: rgba(128, 0, 0, 0.593) !important; 
-    color: #7c5332 ! important;
-}
 
-.nav-link:hover {
-    color:  rgb(250, 205, 146) !important;
-}
-
-.navbar-light .navbar-toggler {
-    color: maroon;
-    border-color: maroon;
+/* scrolling state */
+.navbar, .changeNav.fixed-topp {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #F8F9FA;
-}
-
-.navbar{
     box-shadow: 0 5px 20px -10px #000;
-    padding-top: 5%;
-    padding-bottom: 3%;
-    background-color: transparent !important;
-    border: none;
-    color: #F8F9FA;
-    z-index: 100;
-    transition: background-color 1s ease 0s;
- }
- 
-
-/* Solid class attached on scroll past first section */
-.navbar.solid {
-    background-color: #490D40 !important;
-    transition: background-color 1s ease 0s;
-    box-shadow: 0 0 4px grey;
+    /* transition: background-color 1s ease 0s; */
 }
 
-.navbar-brand {
+/* default state */
+.changeNav {
+    position: relative;
+    background-color: transparent;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 0px 0px 0px #000;
+}
+
+/* About LINKS */
+.changeNav .nav-link {
+    color: rgb(247, 232, 213) !important;
+}
+.nav-link, .nav-link.fixed-topp {
+    color: rgb(247, 232, 213) !important;
+    color: #836e5d ! important;
+}
+.nav-link:hover, .nav-link.fixed-topp:hover  {
+    text-decoration: underline ! important;
+}
+  
+/* About BRAND */
+.changeNav .navbar-brand {
     border-color: transparent;
-    /* color: rgb(250, 205, 146) !important; */
-    color: #7c5332 ! important;
-    /* color: rgba(128, 0, 0, 0.593) !important;  */
+    color: transparent ! important;
+    font-weight: bold;
+}
+.navbar-brand, .navbar-brand.fixed-topp {
+    color: #836e5d ! important;
     font-weight: bold;
 }
 
+/* About TOGGLE and  */
 .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
     background-color: transparent !important;
 }
@@ -73,11 +68,6 @@ html{
     padding-left: 1rem !important;
 }
 
-#collnav{
-    margin-left:5%;
-}
-
-
 /* _________________________________________ */
 /* Bandeau */
 /* _________________________________________ */
@@ -85,7 +75,11 @@ html{
 .bandeauLight, .bandeauDark {
     padding-top:  1.0875rem;
     padding-bottom:  3rem;
-    margin: auto;
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bandeauLight {
@@ -93,9 +87,8 @@ html{
 }
 
 .bandeauDark {
-    background: rgb(250, 205, 146);
+    background: rgb(247, 232, 213);
 }
-
 
 
 .h1Dark, .h1Light {
@@ -110,91 +103,97 @@ html{
     color: #F8F9FA;
 }
 
-
-
+/* Apply only on mobile  */
+@media screen and (max-width: 800px) {
+    .bandeauLight, .bandeauDark{
+        max-width: 100%;
+    }
+}
 
 /* _________________________________________ */
 /* Accueil */
 /* _________________________________________ */
 
-.homepage-bgimage {
+#homepage-bgimage {
     background: url(../images/canada.jpg);
-    
-    height: 75vh;
+    background-attachment: fixed;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #F8F9FA;
+    color: rgb(247, 232, 213) !important;
+    display: flex  !important;
+    justify-content: center  !important;
+    align-items: center  !important;
+    padding: 0%  !important;
 }
 
+#homepage-bgimage h1{ 
+    font-size: 3rem !important;
+}
 
-.layer {
-    
+#homepage-opacLayer {
     background-color: rgba(20, 20, 20, 0.45);
-    /* position: absolute;
-    top: 0;
-    left: 0;*/
     width: 100%; 
     height: 100%; 
 }
-
   
+
 .Typist .Cursor {
-    display: inline-block; }
-    .Typist .Cursor--blinking {
-      opacity: 1;
-      animation: blink 1s linear infinite; }
-  
-  @keyframes blink {
-    0% {
-      opacity: 1; }
-    50% {
-      opacity: 0; }
-    100% {
-      opacity: 1; } }
-
-
-.image{
-    position: relative;
-    width:50px
+    display: inline-block;
 }
-.image__img{
+.Typist .Cursor--blinking {
+    opacity: 1;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+0% {
+    opacity: 1; }
+50% {
+    opacity: 0; }
+100% {
+    opacity: 1; } }
+
+    
+/* _________________________________________ */
+/* Perso */
+/* _________________________________________ */
+
+
+.pictProfile
+{
+    background:url(../images/thib_short.png);
+    background-size: contain;
+    height:140px;
+    width:140px;
     display: block;
-    width: 100%;
-    opacity: 1;
-}
-.image__img:hover{
-    opacity: 0;
-}
-
-.image__overlay{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+    float:left;
+    border-radius: 50%;
+    position: relative;
+    text-decoration: none !important;
 }
 
-.image__overlay:hover{
-    opacity: 1;
+.pictProfile div{
+    color:transparent !important;
+    text-decoration: none !important;
+    height:140px;
+    width:140px;
+    border-radius: 50%;
 }
 
-
-/* _________________________________________ */
-/* Work */
-/* _________________________________________ */
-
-.workC{
+.pictProfile div:hover {
+    
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.7) !important;
+    color: rgb(247, 232, 213) !important;
+    
+    text-align: center;
     display: flex;
     flex-direction: column;
-    /* background-color: aqua; */
-    align-items: center;
-    ;
-
-}
-.role {
-    width:70%
+    justify-content: center;
+    text-decoration: none !important;
+    transition: 0.4s;
 }
 
 /* _________________________________________ */
@@ -202,34 +201,58 @@ html{
 /* _________________________________________ */
 
 
-.onTheRight{
+form button {
     margin-left: inherit;
+    background-color:rgb(250, 205, 146) !important;
+    border-color: transparent !important;
+}
+
+form button:hover {
+    background-color: #836e5d  !important;
+}
+
+
+
+/* _________________________________________ */
+/* Medium article */
+/* _________________________________________ */
+
+
+.article{
+    max-width: 75%;
+}
+.article:hover{
+    box-shadow: 0 5px 20px -10px #000;
+}
+
+.article a, .article a:hover{
+    color:inherit;
+    text-decoration: none;
 }
 
 
 /* _________________________________________ */
 /* Footer */
 /* _________________________________________ */
-.general {
-    background-color: rgb(250, 205, 146);
-    color: #7c5332;
+
+footer {
+    background-color: #836e5d;
+    color: rgb(250, 205, 146);
     margin: auto;
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     text-align: center;
-    
 }
 
-.footerlinks {
-    color: #7c5332;
+footer a, footer a:hover {
+    color: rgb(250, 205, 146);
 }
 
 .conditions {
-    line-height: normal;
-    font-size: 0.5em;
     display: flex;
+    font-size: 0.5em;
+    line-height: normal;
     margin:auto;
     margin-bottom: 1%;
     margin-top: 1%;

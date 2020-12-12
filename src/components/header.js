@@ -6,7 +6,6 @@ import Navbar from 'react-bootstrap/Navbar'
 export default function Header({siteTitle, navClass}) {
   return (
   <Navbar className={navClass} fixed="top" expand="lg">
-    {/* // <Navbar bg="light" fixed="top" expand="lg"> */}
     <Navbar.Brand href="/">
       Et<span id='main-emoji' role="img" aria-label="Data-Cowboy">🤠</span>mal
     </Navbar.Brand>

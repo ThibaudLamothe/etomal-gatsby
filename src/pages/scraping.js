@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Medium from "../components/medium"
+import Bandeau from '../components/bandeau'
 
 import { graphql } from 'gatsby'
 
@@ -10,10 +11,7 @@ export default function ScrapingPage({ data }) {
   return (
     <Layout>
       <SEO title="Scraping" />
-      <br></br>
-      <br></br>
-      <br></br>
-      <div className="medium-blog">
+      <Bandeau>
         {
           data.allScrapingYaml.edges.map(({ node }, index) => (
             <Medium key={index}
@@ -28,9 +26,7 @@ export default function ScrapingPage({ data }) {
               tags={node.tags}/>
             ))
           }  
-      </div>
-      <br></br>
-      <br></br>
+      </Bandeau>
     </Layout>
   )
 }

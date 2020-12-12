@@ -5,13 +5,10 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Container from 'react-bootstrap/Container'
-
 
 const Contact = () => (
   
     <Bandeau title="Get in touch">
-      <Container>
         <Form>
           <Row>
             <Col sm className="p-2">          
@@ -38,12 +35,12 @@ const Contact = () => (
           </Row>
           
           <Row className="ml-auto p-2">
-          <Button variant="primary"  type="submit" className="onTheRight">
+          <Button variant="primary"  type="submit">
             Send
           </Button>
           </Row>
         </Form> 
-      </Container>
+    
     </Bandeau>
  
 )

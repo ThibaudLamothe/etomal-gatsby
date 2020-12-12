@@ -16,7 +16,6 @@ function getPicturePath(imgName) {
 const Hobbies = () => (
 
     <Bandeau title="Hobbies" dark>
-
         <Container fluid>
             <Row className='d-flex justify-content-center mb-5'>
                 I spend most of my time coding, discovering new technologies and watching tech videos, but sometimes I also like to enjoy real life moments.
@@ -73,7 +72,3 @@ const Hobbies = () => (
     </Bandeau>
 )
 export default Hobbies
-
-
-
-
