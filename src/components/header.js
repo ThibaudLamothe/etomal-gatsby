@@ -3,11 +3,12 @@ import { Link } from "gatsby"
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 
-export default function Header({siteTitle}) {
+export default function Header({siteTitle, navClass}) {
   return (
-  <Navbar bg="light" fixed="top" expand="lg">
+  <Navbar className={navClass} fixed="top" expand="lg">
+    {/* // <Navbar bg="light" fixed="top" expand="lg"> */}
     <Navbar.Brand href="/">
-      Et<span role="img" aria-label="Data-Cowboy">🤠</span>mal
+      Et<span id='main-emoji' role="img" aria-label="Data-Cowboy">🤠</span>mal
     </Navbar.Brand>
 
     <Navbar.Toggle aria-controls="basic-navbar-nav" />

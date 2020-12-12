@@ -33,5 +33,12 @@ module.exports = {
         icon: `src/images/etomal.png`, // This path is relative to the root of the site.
       },
     },
+    // {
+    //   resolve: 'gatsby-plugin-load-script',
+    //   options: {
+    //     src: '/navbar.js',
+    //   },
+    // },
+
   ],
 }

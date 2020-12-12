@@ -21,15 +21,8 @@ const CVHead = () => (
     <Bandeau title="Curriculum Vitae">
          <Container>
             <Row className="d-flex justify-content-center mb-3">
-                <Link to="/cv" className='image_thib'>
-                {/* <Link to="/cv"> */}
-                    <div className="image__img">
-                        <Image src={getPicturePath('thib_short.png')} roundedCircle width="130px" className="m-0"/>
-                    </div>
-                    <div className="image__overlay">
-                        <Image src={getPicturePath('etomal.png')} roundedCircle width="130px" className="m-0"/>
-                    </div>
-                </Link>
+                    <Image src={getPicturePath('thib_short.png')} roundedCircle width="130px" className="m-0"/>
+                   
             </Row>
             
             <Row className="d-flex justify-content-center mb-3">
@@ -59,13 +52,11 @@ const CVHead = () => (
 
             <Row className="d-flex justify-content-center">
                 <p className='justified'>                  
-                I'm Thibaud Lamothe, a Data Scientist working in a retail firm's Data Factory. On a daily basis I work with Python and Azure.
-                The key learning from my previous experience in a consulting firm is that working with Data is fun, but added value makes it all.
-                That's why I also work for OpenClassroom, a french online course plateform where I mentor students on a weekly basis.
-                
-                {/* Add something to  */}
+                    I'm Thibaud Lamothe, a Data Scientist working in a retail firm's Data Factory. On a daily basis I work with Python and Azure.
+                    The key learning from my previous experience in a consulting firm is that working with Data is fun, but added value makes it all.
+                    That's why I also work for OpenClassroom, a french online course plateform where I mentor students on a weekly basis.     
                 </p>
-                
+                {/* Add something to  */}
             </Row>
 
             <Row className="d-flex justify-content-center mb-3">

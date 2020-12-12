@@ -1,7 +1,6 @@
 import React from "react"
 
 import Card from 'react-bootstrap/card'
-import Button from 'react-bootstrap/button'
 import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/row'
 import Col from 'react-bootstrap/col'
@@ -10,7 +9,6 @@ function getPicturePath(imgName) {
     const images = require.context('../images/', true);
     return images('./medium/' + imgName)
   }
-
 
 const Medium = ({ title, subtitle, pictPath, url, date, publi, publiPictPath, duree, tags, children }) => (
 
@@ -29,7 +27,7 @@ const Medium = ({ title, subtitle, pictPath, url, date, publi, publiPictPath, du
                         {subtitle}
                     </Card.Text>
 
-                    <Card.Text>
+                    {/* <Card.Text> */}
                         <Row className="d-flex justify-content-center align-items-center">
                             <Col md='auto'>
                                 <Image  rounded src={getPicturePath(publiPictPath)} width="50px"></Image>
@@ -40,7 +38,7 @@ const Medium = ({ title, subtitle, pictPath, url, date, publi, publiPictPath, du
                                 <small className="text-muted">{date} - {duree} read</small>
                             </Col>
                         </Row>
-                    </Card.Text>
+                    {/* </Card.Text> */}
                 </Card.Body>
             </Col>
         </Row>
