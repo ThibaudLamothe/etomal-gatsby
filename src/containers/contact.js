@@ -5,10 +5,12 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/container'
 
 const Contact = () => (
   
-    <Bandeau title="Get in touch">
+    <Bandeau title="Get in touch" subtitle='Contact me'>
+      <Container>
         <Form>
           <Row>
             <Col sm className="p-2">          
@@ -40,6 +42,7 @@ const Contact = () => (
           </Button>
           </Row>
         </Form> 
+      </Container>
     
     </Bandeau>
  

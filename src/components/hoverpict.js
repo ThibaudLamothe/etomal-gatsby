@@ -11,10 +11,10 @@ const HoverPict = ({ pictBack, pictFront, url, width=30}) => (
             className="m-2"   
             width={width + 'px'}
             src= {getPicturePath(pictBack)} 
-            // onMouseOver = {e => (e.currentTarget.src = getPicturePath(pictFront) )}
-            // onMouseOut  = {e => (e.currentTarget.src = getPicturePath(pictBack ) )}
-            // onFocus=""
-            // onBlur=""
+            onMouseOver = {e => (e.currentTarget.src = getPicturePath(pictFront) )}
+            onMouseOut  = {e => (e.currentTarget.src = getPicturePath(pictBack ) )}
+            onFocus=""
+            onBlur=""
         /> 
     </a>
 )

@@ -27,8 +27,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `etomal`,
         start_url: `/`,
-        background_color: `#7c5332`,
-        theme_color: `#7c5332`,
+        background_color: `#836e5d`,
+        theme_color: `#F7E8D5`,
         display: `minimal-ui`,
         icon: `src/images/etomal.png`, // This path is relative to the root of the site.
       },
