@@ -1,14 +1,16 @@
 
 
 - article:
-  date: 29 Novembre 2020
+  date: November 29th, 2020
   publi: Towards Data Science
   publiPictPath: publi_tds.jpeg
   pictPath: custom_choropleth.jpeg
   duree: 11 min
   tags:
-    - tag1
-    - tag2
+    - Python
+    - ScatterMap
+    - GeoJSON
+    - Plotly
   title:
     How to create outstanding custom choropleth maps with Plotly and Dash 🌎 
   subtitle:
@@ -18,14 +20,18 @@
 
 
 - article:
-  date: 11 Octobre 2020
+  date: October 11th, 2020
   publi: Towards Data Science
   publiPictPath: publi_tds.jpeg
   pictPath: whales.jpeg
   duree: 13 min
   tags:
-    - tag1
-    - tag2
+    - Python
+    - Open CV
+    - Time-Series
+    - Image-Processing
+    - Integral-Curvature
+    - DTW
   title:
     Whale identification by processing tails as Time Series
   subtitle:
@@ -36,14 +42,15 @@
 
 
 - article:
-  date: 3 Aout 2020
+  date: August 3rd, 2020
   publi: Towards Data Science
   publiPictPath: publi_tds.jpeg
   pictPath: deploy_heroku.jpeg
   duree: 8 min
   tags:
-    - tag1
-    - tag2
+    - Python
+    - Flask
+    - Heroku
   title:
     Deploying Dash or Flask web application on Heroku. Easy CI/CD.
   subtitle:
@@ -53,14 +60,16 @@
 
 
 - article:
-  date: 8 Juin 2020
+  date: June 8th, 2020
   publi: Towards Data Science
   publiPictPath: publi_tds.jpeg
   pictPath: animated_scatter.png
   duree: 7 min
   tags:
-    - tag1
-    - tag2
+    - Python
+    - ChroroplethMap
+    - Plotly
+    - Dash
   title:
     How to create outstanding animated scatter maps with plotly and dash 
   subtitle:
@@ -70,14 +79,16 @@
 
 
 - article:
-  date: 3 Aout 2020
+  date: May 31st, 2020
   publi: The Startup
   publiPictPath: publi_startup.jpeg
   pictPath: logzero.jpeg
   duree: 5 min
   tags:
-    - tag1
-    - tag2
+    - Python
+    - Best Practice
+    - Logging
+    - Logzero
   title:
     Why You Should Use Logzero as a Logger in Your Data Science Projects 
   subtitle:
@@ -88,7 +99,7 @@
 
 
 - article:
-  date: 18 Mai 2020
+  date: May 18th, 2020
   publi: Towards Data Science
   publiPictPath: publi_tds.jpeg
   pictPath: translate_ppt.jpeg
@@ -96,6 +107,9 @@
   tags:
     - Automation
     - PowerPoint
+    - Scraping
+    - Selenium
+    - DeepL
   title:
     Using Selenium and deepL to automate the translation of Power Point files
   subtitle: 
