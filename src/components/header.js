@@ -15,6 +15,7 @@ export default function Header({siteTitle, navClass}) {
       <Nav className="ml-auto" id="collnav">
         <Link className="nav-link" to="/">Home</Link>
         <Link className="nav-link" to="/blog">Blog</Link>
+        <Link className="nav-link" to="/contact">Contact</Link>
         {/* <Link className="nav-link" to="/portfolio">Portfolio</Link> */}
         {/* <Link className="nav-link" to="/scraping">Scraping</Link> */}
       </Nav>

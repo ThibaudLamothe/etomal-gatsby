@@ -12,7 +12,7 @@ const Contact = () => (
     <Bandeau title="Get in touch" subtitle='Contact me'>
       <Container>
         <Form>
-          <Row>
+          <Row className='mt-4'>
             <Col sm className="p-2">          
               <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label>Username</Form.Label>
@@ -27,7 +27,7 @@ const Contact = () => (
             </Col>
           </Row>
           
-          <Row>
+          <Row className='mt-4'>
             <Col className="p-2">
               <Form.Group controlId="exampleForm.ControlTextarea1">
                 {/* <Form.Label>Your message</Form.Label> */}
@@ -36,7 +36,7 @@ const Contact = () => (
             </Col>
           </Row>
           
-          <Row className="ml-auto p-2">
+          <Row className="ml-auto p-2 mt-4">
           <Button variant="primary"  type="submit">
             Send
           </Button>
