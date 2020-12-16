@@ -6,42 +6,13 @@ import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/container'
-
+import MyForm from '../containers/form'
 const Contact = () => (
   
-    <Bandeau title="Get in touch" subtitle='Contact me'>
+    <Bandeau title="Get in touch" subtitle='Contact me' id="contactBandeau">
       <Container>
-        <Form>
-          <Row className='mt-4'>
-            <Col sm className="p-2">          
-              <Form.Group controlId="exampleForm.ControlInput1">
-                <Form.Label>Username</Form.Label>
-                <Form.Control type="text" placeholder="Ex : Thibaud L." required/>
-              </Form.Group>
-            </Col>
-            <Col sm className="p-2">
-              <Form.Group controlId="exampleForm.ControlInput1">
-                <Form.Label>*E-mail adress </Form.Label>
-                <Form.Control type="email" placeholder="Ex : hello@etomal.com" required />
-              </Form.Group>
-            </Col>
-          </Row>
-          
-          <Row className='mt-4'>
-            <Col className="p-2">
-              <Form.Group controlId="exampleForm.ControlTextarea1">
-                {/* <Form.Label>Your message</Form.Label> */}
-                <Form.Control as="textarea" rows="6" placeholder="Your message here 🤠"/>
-              </Form.Group>
-            </Col>
-          </Row>
-          
-          <Row className="ml-auto p-2 mt-4">
-          <Button variant="primary"  type="submit">
-            Send
-          </Button>
-          </Row>
-        </Form> 
+        <MyForm></MyForm>
+     
       </Container>
     
     </Bandeau>
