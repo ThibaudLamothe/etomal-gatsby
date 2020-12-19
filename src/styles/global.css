@@ -1,15 +1,40 @@
 /* _________________________________________ */
+/* COLORS */
+/* _________________________________________ */
+.colors {
+    background-color: #F8F9FA;
+    background-color: #F7E8D5;
+    background-color: #836e5d;
+}
+
+/* _________________________________________ */
 /* General */
 /* _________________________________________ */
 
 html{
     background-color: #F8F9FA;
+    /* background-color: #20232f; */
+}
+body{
+    min-height: 100vh;
 }
 
-.dark{background-color:  rgb(250, 205, 146) !important;}
-.veryDark{background-color:  #7c5332 !important;}
-.darkT{color:  rgb(250, 205, 146) !important;}
-.veryDarkT{color:  #7c5332 !important;}
+/* a, a:hover{
+ color: #ffd6a0 !important;
+} */
+
+/* Background */
+.dark{background-color:  #F7E8D5!important;}
+.dark{background-color:  #F8F9FA !important;}
+/* .dark{background-color:  #f9f6eeba!important;} */
+.veryDark{background-color:  #836e5d !important;}
+
+
+/* Text */
+.darkT{color:  #F7E8D5!important;}
+.darkT{color:  #f6e2c7!important;}
+.darkT{color:  #eed4b1!important;}
+.veryDarkT{color:  #836e5d !important;}
 
 
 /* _________________________________________ */
@@ -37,10 +62,10 @@ html{
 
 /* About LINKS */
 .changeNav .nav-link {
-    color: rgb(247, 232, 213) !important;
+    color: #F7E8D5!important;
 }
 .nav-link, .nav-link.fixed-topp {
-    color: rgb(247, 232, 213) !important;
+    color: #F7E8D5!important;
     color: #836e5d ! important;
 }
 .nav-link:hover, .nav-link.fixed-topp:hover  {
@@ -72,36 +97,55 @@ html{
 /* Bandeau */
 /* _________________________________________ */
 
-.bandeauLight, .bandeauDark {
+.bandeau {
     padding-top:  1.0875rem;
     padding-bottom:  3rem;
-    min-height: 80vh;
+    /* min-height: 80vh; */
     display: flex;
-    justify-content: space-around;
+    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
+    /* border-color: grey; */
+    border-bottom: 1px solid #e4e4e4;
 }
 
-.bandeauLight {
-    background: #F8F9FA;
-}
-
-.bandeauDark {
-    background: rgb(247, 232, 213);
-}
-
-
-.h1Dark, .h1Light {
-    color: rgb(250, 205, 146);
+.bandeau h1 {
     text-decoration: none;
-    margin: 2rem 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: space-around;
+    font-weight: normal;
 }
 
-.h1Dark {
-    color: #F8F9FA;
+.bandeau h2 {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 1rem;
+    font-size:large;
+    font-weight: normal;
+    /* color: #836e5d !important; */
 }
+
+#presentationText {
+    width: 45%;
+}
+
+.cvText {
+    width: 70%;
+}
+
+#cvIcons {
+    width: 70%;
+}
+
+#paraSkills{
+    background: url(../images/skills.png) !important;
+    background-attachment: fixed !important;
+
+}
+
+
 
 /* Apply only on mobile  */
 @media screen and (max-width: 800px) {
@@ -121,7 +165,7 @@ html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: rgb(247, 232, 213) !important;
+    color: #F7E8D5!important;
     display: flex  !important;
     justify-content: center  !important;
     align-items: center  !important;
@@ -186,7 +230,7 @@ html{
     
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.7) !important;
-    color: rgb(247, 232, 213) !important;
+    color: #F7E8D5!important;
     
     text-align: center;
     display: flex;
@@ -196,23 +240,41 @@ html{
     transition: 0.4s;
 }
 
+
+
 /* _________________________________________ */
 /* Contact */
 /* _________________________________________ */
 
 
-form button {
+.onTheRight {
     margin-left: inherit;
-    background-color:rgb(250, 205, 146) !important;
+    color: #836e5d !important;
+}
+.button, form button {
+    
     border-color: transparent !important;
+    background-color: #F7E8D5 !important;
+    color: #836e5d !important;
 }
 
-form button:hover {
+.button:hover, form button:hover {
     background-color: #836e5d  !important;
+    color: #F7E8D5 !important;
+}
+
+#resize{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
 }
 
 
 
+#contactBandeau{
+ border: None;
+}
 /* _________________________________________ */
 /* Medium article */
 /* _________________________________________ */
@@ -230,15 +292,69 @@ form button:hover {
     text-decoration: none;
 }
 
+.articleTag{
+    margin-right:15px;
+    margin-bottom:5px;
+    margin-top:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 1em;
+    border-color: #836e5d;
+    color: #836e5d;
+    background-color: #F7E8D5;
+}
+.articleTag:hover{
+    background-color: #836e5d;
+    color: #F7E8D5;
+}
+
+
+/* _________________________________________ */
+/* CV Head  */
+/* _________________________________________ */
+
+#pictThib {
+    background-image:url(../images/thibaud.jpg);
+    position:relative;
+    
+    padding-bottom: 60% ; /* % of width, defines aspect ratio */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* background-attachment:fixed ;   */
+    width: 50%;
+}
+
+#cvhead {
+    min-height: 100vh;
+    height: 100%;
+}
+
+
+#cvSubHead {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around !important;
+    align-items: center !important;
+    min-height:90%;
+}
+
 
 /* _________________________________________ */
 /* Footer */
 /* _________________________________________ */
 
+/* body{ height:100%; margin:0;  display: flex;
+    flex-direction: column;}
+
+div#___gatsby, div#gatsby-focus-wrapper{
+    min-height: 100vh !important;
+} */
 footer {
     background-color: #836e5d;
-    color: rgb(250, 205, 146);
-    margin: auto;
+    color: #F7E8D5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -246,7 +362,7 @@ footer {
 }
 
 footer a, footer a:hover {
-    color: rgb(250, 205, 146);
+    color: #F7E8D5;
 }
 
 .conditions {
@@ -257,3 +373,69 @@ footer a, footer a:hover {
     margin-bottom: 1%;
     margin-top: 1%;
 }
+
+
+
+
+/* _________________________________________ */
+/* Other */
+/* _________________________________________ */
+
+.test{
+
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(134deg,   #F8F9FA 0%, #F7E8D5 99%);
+    transform: skewY(-3deg);
+}
+
+
+
+
+
+#para::-webkit-scrollbar { width: 0 !important }
+html::-webkit-scrollbar { width: 0 !important }
+body::-webkit-scrollbar { width: 0 !important }
+
+
+.toto{
+    max-width: 70%;
+}
+
+.hobbies{
+    max-width: 75%;
+}
+
+
+
+
+.yearCV, .expPro, .expTeach, .schoolCV, .extraCV, .hobbieCV {
+    
+    margin-bottom: 2% !important;
+    margin-top: 2% !important;
+    display: block;
+    width: 10%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.expTeach{margin-left: 15%;}
+.expTeach.colored{background-color: lightseagreen;}
+
+.expPro{margin-left: 30%;}
+.expPro.colored{background-color: lightgreen;}
+
+.yearCV{margin-left: 47%; width: 5%;}
+.yearCV.colored{background-color: lightcoral;}
+
+.schoolCV{margin-left: 60%;}
+.schoolCV.colored{background-color: lightskyblue;}
+
+.extraCV{margin-left: 75%;}
+.extraCV.colored{background-color: lightslategray;}
+
+.hobbieCV{margin-left: 90%;}
+.hobbieCV.colored{background-color: lightyellow; width: 5%;}

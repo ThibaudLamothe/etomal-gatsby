@@ -24,10 +24,9 @@ const BlogPost = () => {
             }
         }
         `)
-
+    
     return(  
-
-        <Bandeau>
+        <Bandeau dark>
             {        
                 data.allMediumYaml.edges.map(({ node }, index) => (
                         <Medium key={index}
@@ -43,7 +42,6 @@ const BlogPost = () => {
                 ))  
             }  
         </Bandeau>
-        // </div> 
     )
 }
 

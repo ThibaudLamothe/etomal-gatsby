@@ -5,14 +5,22 @@ import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/row'
 import Col from 'react-bootstrap/col'
 
+import "aos/dist/aos.css"
+import Aos from "aos"
+import {useEffect} from "react"
+
+
 function getPicturePath(imgName) {
     const images = require.context('../images/', true);
     return images('./medium/' + imgName)
   }
 
-const Medium = ({ title, subtitle, pictPath, url, date, publi, publiPictPath, duree, tags, children }) => (
-
-    <Card className="article m-3" >
+const Medium = ({ title, subtitle, pictPath, url, date, publi, publiPictPath, duree, tags, children })=> {
+    useEffect(() => {
+      Aos.init({duration: 1000 });
+    }, []);
+    return (
+    <Card data-aos='fade-up' className="article m-3" >
         <a href={url}>
             <Row>
                 <Col md="5" className='d-flex mb-0'>
@@ -43,13 +51,13 @@ const Medium = ({ title, subtitle, pictPath, url, date, publi, publiPictPath, du
 
                         <div>
                             {tags.map(tag =>
-                            <a href='etomal.com/blog/tag'>
+                            // <a href={'etomal.com/blog/' + tag.toLowerCase()}>
                             <small>
                                 <span className="articleTag">
                                     {tag}
                                 </span>
                             </small>
-                            </a>
+                            // </a>
                             )}
                         </div> 
 
@@ -63,6 +71,6 @@ const Medium = ({ title, subtitle, pictPath, url, date, publi, publiPictPath, du
     </Card>
 
 
-)
+);};
 
 export default Medium

@@ -1,22 +1,21 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Work from "../containers/work"
-import Life from "../containers/life"
-import School from "../containers/school"
 import CVHead from "../containers/cvhead"
-import Hobbies from "../containers/hobbies"
-
+// import Work from "../containers/work"
+// import School from "../containers/school"
+// import Hobbies from "../containers/hobbies"
+// import Contact from "../containers/contact"
 
 const CVPage = () => (
   <Layout>
+    <br/><br/>
     <SEO title="CV | Thibaud LAMOTHE" />
-    <br></br>
     <CVHead />
-    <Work />
-    <Hobbies />
+    {/* <Work />
     <School />
-    <Life />
+    <Hobbies />
+    <Contact />*/}
   </Layout>
 
 )

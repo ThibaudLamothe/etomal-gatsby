@@ -7,8 +7,8 @@ import BlogPost from "../containers/blogpost"
 
 const BlogPage = () => (
   <Layout>
+    <br/><br/>
     <SEO title="Blog" />
-    <br></br>
     <BlogHead/>
     <BlogPost/>
   </Layout>

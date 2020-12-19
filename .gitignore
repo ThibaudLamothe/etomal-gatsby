@@ -71,3 +71,9 @@ yarn-error.log
 
 # secret parameter
 env.secret.js
+
+# dev and personal files
+CV_Thibaud_Lamothe.pdf
+*tmp.*
+links.md
+other.css
