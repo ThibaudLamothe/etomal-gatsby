@@ -1,124 +1,102 @@
-- article:
-  # date: 29 Novembre 2020
-  # publi: Towards Data Science
-  # publiPictPath: publi_tds.jpeg
-  duree: "0"
+- project:
   pictPath: translate_ppt.jpeg
+  title:
+    Power-Point Translation
+  subtitle:
+    A tool which extracts textual data from PowerPoint, translate them using DeepL through Selenium, and reinsert data keeping the original formatting.
+  text:
+    Lorem ipsum blablabla
   tags:
     - Python
     - Automation
     - Selenium
     - DeepL
     - GitHub Repo
+  urls:
+    github:
+      - https://github.com/ThibaudLamothe/translate-pptx
+    medium:
+      - https://github.com/ThibaudLamothe/translate-pptx
+
+
+
+- project:
+  pictPath: ws_1.jpeg
   title:
-    PowerPoint Translation
+    Scraping Corner
   subtitle:
-    A tool which extracts textual data from PowerPoint, translate them using DeepL through Selenium, and reinsert data keeping the original formatting.
-  url: 
-    https://github.com/ThibaudLamothe/scraping-corner
-
-
-
-
-
-- article:
-  # date: 29 Novembre 2020
-  # publi: Towards Data Science
-  # publiPictPath: publi_tds.jpeg
-  duree: "0"
-  pictPath: scraping_corner.png
+    A repository where I host all my Scraping projects. There are a bunch of them, and I use to import the spiders from the different projects.
+  text:
+    Lorem ipsum blablabla
   tags:
     - Python
     - Scraping
     - Scrapy
     - Selenium
     - GitHub Repo
-  title:
-    ScrapingCorner
-  subtitle:
-    A repository where I host all my Scraping projects. There are a bunch of them, and I use to import the spiders from the different projects.
-  url: 
-    https://github.com/ThibaudLamothe/scraping-corner
-
-
-
-- article:
-  # date: 29 Novembre 2020
-  # publi: Towards Data Science
-  # publiPictPath: publi_tds.jpeg
-  duree: "0"
+  urls:
+    github:
+      - https://github.com/ThibaudLamothe/scraping-corner
+    
+- project:
   pictPath: covid_map.png
+  title:
+    Covid Map
+  subtitle:
+    An interactive Scatter Map to visualize the evolution of Covid Cases over the world.
   tags:
     - Python
     - Plotly
     - Dash
-    - Flak
+    - Flask
     - Mapbox
     - GeoJSON
     - Website
+  urls:
+    github:
+      - https://github.com/ThibaudLamothe/scraping-corner
+    deployed:
+      - https://covid-19-worldmap.herokuapp.com/
+    medium:
+      - https://github.com/ThibaudLamothe/scraping-corner
+      - https://github.com/ThibaudLamothe/scraping-corner
 
-  title:
-    CovidMap
-  subtitle:
-    An interactive Scatter Map to visualize the evolution of Covid Cases over the world.
-  url: 
-    https://covid-19-worldmap.herokuapp.com/
 
 
-
-
-- article:
-  # date: 29 Novembre 2020
-  # publi: Towards Data Science
-  # publiPictPath: publi_tds.jpeg
-  duree: "0"
+- project:
   pictPath: hhm.jpg
+  title:
+    HivaHoaMassage
+  subtitle:
+    A website designed with Gatsby and React for a masseuse.
+  text:
+    Lorem ipsum blablabla
   tags:
     - Website
     - Gatsby
     - React
     - JavaScript
-  title:
-    HivaHoaMassage
-  subtitle:
-    A website designed with Gatsby and React for a masseuse.
-  url: 
-    https://hivahoamassage.com/
+  urls:
+    deployed:
+      - https://hivahoamassage.com/
 
 
-- article:
-  # date: 29 Novembre 2020
-  # publi: Towards Data Science
-  # publiPictPath: publi_tds.jpeg
-  duree: "0"
+- project:
   pictPath: smartbar.png
+  title:
+    Smart Bar Application
+  subtitle:
+    An app to help me make fantastic cocktails taking into consiedation what I have within my bar and what my guests would like to enjoy.
+  text:
+    Lorem ipsum blablabla
   tags:
     - Python
     - Flask
     - React
     - Docker
     - AWS
-  title:
-    SmartBar
-  subtitle:
-    An app to help me make fantastic cocktails taking into consiedation what I have within my bar and what my guests would like to enjoy.
-  url: 
-    http://smartbar.etomal.com/
+  urls:
+    deployed:
+      - http://smartbar.etomal.com/
     # http://ec2-15-188-2-177.eu-west-3.compute.amazonaws.com:3000/
 
-
-- article:
-  date: ""
-  publi: ""
-  publiPictPath: ""
-  duree: "0"
-  pictPath: rpi.png
-  tags:
-    - javascript
-    - flask
-  title:
-    Raspberry Pi - Flask Hello World!
-  subtitle:
-    I use tu spend some time building things and running experiments with my Raspberry Pi. 
-  url: 
-    https://etomal.com

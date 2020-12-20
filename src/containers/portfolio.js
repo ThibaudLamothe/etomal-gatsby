@@ -11,15 +11,16 @@ export default function Portfolio() {
           edges {
             node {
               id
-              subtitle
-              url
-              title
-              publiPictPath
-              publi
               pictPath
-              date
-              duree
+              title
+              subtitle
+              text
               tags
+              urls {
+                github
+                medium
+                deployed
+              }
             }
           }
         }
@@ -34,12 +35,9 @@ export default function Portfolio() {
           key={index}
           title={node.title}
           subtitle={node.subtitle}
+          text={node.text}
           pictPath={node.pictPath}
-          url={node.url}
-          publi={node.publi}
-          publiPictPath={node.publiPictPath}
-          duree={node.duree}
-          date={node.date}
+          urls={node.urls}
           tags={node.tags}
         />
       ))}
