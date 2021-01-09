@@ -24,7 +24,17 @@ Creating my personal website with Gatsby. Starting with the Hello-World project.
 
 - Added [plugin load script](https://www.gatsbyjs.com/plugins/gatsby-plugin-load-script/) : `npm install gatsby-plugin-load-script`
 - For navbar effect
-- 
+
+- Added [Typography](https://www.gatsbyjs.com/plugins/gatsby-plugin-typography/) `npm install gatsby-plugin-typography react-typography typography`
+
+- Added : htaccess
+
+- Added [Google Analytics](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-analytics/) `npm install gatsby-plugin-google-analytics`
+npm i react-scroll-parallax
+npm install react-spring
+
+Running on local network : gatsby develop -H 0.0.0.0 -p 8000
+
 # 🚀 Quick start
 
 1.  **Create a Gatsby site.**
