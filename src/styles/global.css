@@ -2,7 +2,7 @@
 /* COLORS */
 /* _________________________________________ */
 .colors {
-    background-color: #F8F9FA;
+    background-color: hsl(210, 17%, 98%);
     background-color: #F7E8D5;
     background-color: #836e5d;
 }
@@ -17,11 +17,16 @@ html{
 }
 body{
     min-height: 100vh;
+    
 }
 
-/* a, a:hover{
- color: #ffd6a0 !important;
-} */
+
+
+#p404 a, #p404 a:hover{
+ color: #836e5d !important;
+}
+
+
 
 /* Background */
 .dark{background-color:  #F7E8D5!important;}
@@ -152,6 +157,9 @@ body{
     .bandeauLight, .bandeauDark{
         max-width: 100%;
     }
+    #presentationText{
+        width: 85%;
+    }
 }
 
 /* _________________________________________ */
@@ -174,6 +182,7 @@ body{
 
 #homepage-bgimage h1{ 
     font-size: 3rem !important;
+    text-align: center;
 }
 
 #homepage-opacLayer {
@@ -266,7 +275,7 @@ body{
 #resize{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 80vh;
     justify-content: center;
 }
 
@@ -293,21 +302,135 @@ body{
 }
 
 .articleTag{
-    margin-right:15px;
-    margin-bottom:5px;
-    margin-top:5px;
+
+    margin-right:5px !important;
+    margin-bottom:5px !important;
+    /* margin-top:5px !important; */
+    
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    
     border-radius: 1em;
+    
     border-color: #836e5d;
     color: #836e5d;
     background-color: #F7E8D5;
+    /* background-color:red; */
+
+    /* margin:50px 50px 50px 50px; */
+    padding:5px;
+    padding-right:10px;
+    padding-left:10px;
+
+    display:inline-block;
+    
+    white-space: pre;
 }
 .articleTag:hover{
     background-color: #836e5d;
     color: #F7E8D5;
+}
+
+
+/* _________________________________________ */
+/* Portfolio project */
+/* _________________________________________ */
+
+.project{
+    /* background-color: red; */
+    margin: 80px 0px;
+    max-width: 85%;
+}
+
+.project-wrap{
+    display: grid;
+    grid-template-columns: 1fr 170px 1fr;
+    grid-template-rows: 1fr;
+    -webkit-box-align: center;
+    align-items: center;
+
+}
+
+.project-descr{
+    padding: 50px;
+    background-color: #F8F9FA;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    box-shadow: rgba(0.05, 0.05, 0.05, 0.05) 0px 5px 10px;
+    border-radius: 10px;
+    min-height: 450px;
+    grid-area: 1 / 1 / auto / 3;
+    
+}
+.project-text{
+    max-width: 75%;
+    
+}
+
+.project-blabla{
+    min-height:150px;
+}
+
+.project-pict{
+    grid-area: 1 / 2 / auto / 4;
+    position: relative;
+    right: -20px;
+    /* max-height:400px; */
+    
+}
+
+
+.projectTag{
+    margin-right:15px;
+    margin-bottom:15px;
+    margin-top:15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 1em;
+    border-color: #836e5d;
+    color: #836e5d;
+    background-color: #F7E8D5;
+    /* background-color:red; */
+    hyphens: none;
+}
+
+.projectTag:hover{
+    background-color: #836e5d;
+    color: #F7E8D5;
+    text-decoration: none;
+    
+}
+
+
+/* Apply only on mobile  */
+@media (max-width: 1000px){
+    .project-descr {
+        min-height: unset;
+        grid-column: 1 / 4;
+        grid-row: unset;
+        padding: 30px;
+    }
+
+    .project-descr .project-text {
+        width: 100%;
+        max-width: 100%;
+        min-height:250px;
+    }
+
+    .project-pict {
+        right: 0px;
+        grid-column: 1 / 4;
+        margin-bottom: 20px;
+    }
+    
+    .project-blabla{
+        min-height:50px;
+    }
+    
+
 }
 
 
@@ -328,7 +451,7 @@ body{
 }
 
 #cvhead {
-    min-height: 100vh;
+    min-height: 97vh;
     height: 100%;
 }
 
@@ -359,6 +482,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    min-height:13vh;
 }
 
 footer a, footer a:hover {
@@ -374,8 +498,13 @@ footer a, footer a:hover {
     margin-top: 1%;
 }
 
+.top{
+    height:7vh;
+}
 
-
+#p404{
+    height:80vh
+}
 
 /* _________________________________________ */
 /* Other */
@@ -391,7 +520,12 @@ footer a, footer a:hover {
     transform: skewY(-3deg);
 }
 
-
+/* @media (max-width: 400px){
+    h1{
+        font-size: medium !important;
+        color: red !important;
+    }
+} */
 
 
 
