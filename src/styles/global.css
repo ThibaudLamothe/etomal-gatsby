@@ -27,6 +27,9 @@ body{
 }
 
 
+.center-text{
+    text-align: center;
+}
 
 /* Background */
 .dark{background-color:  #F7E8D5!important;}

@@ -4,8 +4,8 @@ import Container from "react-bootstrap/esm/Container"
 
 const Bandeau = ({ title, subtitle, dark, fluid, id, children }) => (
   <Container fluid className={dark ? "bandeau dark " : "bandeau"} id={id}>
-    <h1 className={"veryDarkT"}>{title}</h1>
-    <h2 className={"darkT"}>{subtitle}</h2>
+    <h1 className="veryDarkT text-center">{title}</h1>
+    <h2 className="darkT">{subtitle}</h2>
     {children}
   </Container>
 )
