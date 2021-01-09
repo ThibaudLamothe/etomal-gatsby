@@ -14,7 +14,8 @@ const Contact = () => {
   }, [])
   return (
     <Bandeau title="Get in touch" subtitle="Contact me" id="contactBandeau">
-      <Container data-aos="fade-up">
+      {/* <Container data-aos="fade-up"> */}
+      <Container>
         <MyForm></MyForm>
       </Container>
     </Bandeau>

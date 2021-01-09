@@ -16,7 +16,7 @@ const About = () => {
   return (
     <Bandeau title="About me" subtitle="Who I am">
       <Row
-        data-aos="fade-up"
+        // data-aos="fade-up"
         className="d-flex flex-column align-items-center m-3"
       >
         <Link to="/cv" className="pictProfile">
@@ -30,7 +30,8 @@ const About = () => {
         </Link>
       </Row>
 
-      <Row data-aos="fade-up" className="d-flex justify-content-center m-3">
+      {/* <Row data-aos="fade-up" className="d-flex justify-content-center m-3"> */}
+      <Row className="d-flex justify-content-center m-3">
         <HoverPict
           url="https://www.linkedin.com/in/thibaud-lamothe/"
           pictBack="sn_linkedin_dark.png"
@@ -51,22 +52,22 @@ const About = () => {
       </Row>
 
       <Row
-        data-aos="fade-up"
+        // data-aos="fade-up"
         className="d-flex justify-content-center mt-3 mb-0"
       >
         <p className="text-center" id="presentationText">
           <span>
-            Hi
+            Hi {" "}
             <span role="img" aria-label="hi">
               👋
-            </span>{" "}
+            </span>
           </span>
           <br />
           <br />
           I'm a Data Scientist working in a retail firm's Data Factory. During
           the day I work with Python and Azure about Machine Learning and Deep
           Learning. When I get home I enjoy practicing other technologies such
-          as JavaScript and React on diverse kind of projects
+          as JavaScript and React on diverse kind of projects, such as this website {" "}
           <span role="img" aria-label="computer-guy">
             🧑‍💻
           </span>
@@ -74,7 +75,7 @@ const About = () => {
           <br />I truly believe that data is revolutionning our lives and the
           world we live in. This is the reason why I keep learning and
           certifying on diverse subjects, but also mentor Data Science students
-          on a weekly basis
+          on a weekly basis {" "}
           <span role="img" aria-label="teacher-guy">
             👨‍🏫
           </span>
@@ -86,7 +87,7 @@ const About = () => {
         className="d-flex justify-content-center mt-3 mb-0"
       >
         <p className="text-center">
-          Welcome to my website
+          Welcome to my website {" "}
           <span role="img" aria-label="earth">
             🌎
           </span>

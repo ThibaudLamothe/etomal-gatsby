@@ -7,7 +7,7 @@ import Contact from "../containers/contact"
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
-    <br />
+    <div className='top'></div>
     <div id="resize">
       <Contact />
     </div>
