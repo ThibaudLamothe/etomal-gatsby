@@ -23,7 +23,7 @@ const CVHead = () => (
               <p className="text-center cvText">
                 I'm Thibaud, a Data Scientist working in a retail firm's Data
                 Factory. On a daily basis I work with Python and Azure on
-                Machine Learning and Deep Learning Projects
+                Machine Learning and Deep Learning Projects {" "}
                 <span role="img" aria-label="robot">
                   🤖
                 </span>
@@ -36,8 +36,8 @@ const CVHead = () => (
                 or Public Sector. The key learning from this experience is that
                 added value makes it all, and you get it right from the
                 soon-to-be users of your applications. That's why I decided to
-                join a Team which works with end-users and has industrialisation
-                processes at the heart of its activities
+                join a team which works with end-users and has data sience industrialisation
+                processes (MLOps) at the heart of its activities {" "}
                 <span role="img" aria-label="man">
                   👨‍💼
                 </span>
@@ -47,7 +47,7 @@ const CVHead = () => (
               <p className="text-center cvText">
                 During my free-(coding)-time, on personal projects I also enjoy
                 practicing my front-end skills to deserve my full-stack Data
-                Scientist status
+                Scientist status {" "}
                 <span role="img" aria-label="computer-man">
                   🧑‍💻
                 </span>
@@ -59,7 +59,7 @@ const CVHead = () => (
                 world we live in. This is the reason why I keep learning and
                 certifying on diverse subjects, but also mentor Data Science
                 students on a weekly basis, for OpenClassroom a french online
-                course plateform
+                course plateform {" "}
                 <span role="img" aria-label="teacher-man">
                   👨‍🏫
                 </span>
@@ -75,7 +75,7 @@ const CVHead = () => (
               className="d-flex justify-content-center mt-3 mb-5"
               id="cvIcons"
             >
-              <Col className="d-flex justify-content-center">
+              <Col sm md lg={6} className="d-flex justify-content-center mb-4">
                 <Button href="/CV_Thibaud_Lamothe.pdf" className="button">
                   {/* Get PDF Version */}
                   Curriculum Vitae PDF
@@ -86,7 +86,7 @@ const CVHead = () => (
               </span>
             </Button> */}
               </Col>
-              <Col className="d-flex justify-content-center">
+              <Col sm md lg={6} className="d-flex justify-content-center mb-4">
                 {/* <Row className="d-flex justify-content-center mb-2"> */}
                 <HoverPict
                   url="https://www.linkedin.com/in/thibaud-lamothe/"

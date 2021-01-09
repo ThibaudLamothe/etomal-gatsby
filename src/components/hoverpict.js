@@ -5,17 +5,17 @@ function getPicturePath(imgName) {
     return images('./networks/' + imgName)
   }
 
-const HoverPict = ({ pictBack, pictFront, url, width=30}) => (
+const HoverPict = ({ pictBack, pictFront, url, width='30px'}) => (
     <a href={url}>
         <img alt={pictBack}
             className="m-2"   
-            width={width + 'px'}
+            width={width}
             src= {getPicturePath(pictBack)} 
             onMouseOver = {e => (e.currentTarget.src = getPicturePath(pictFront) )}
             onMouseOut  = {e => (e.currentTarget.src = getPicturePath(pictBack ) )}
             onFocus=""
             onBlur=""
-        /> 
+        />
     </a>
 )
 

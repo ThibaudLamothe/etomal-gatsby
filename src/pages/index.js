@@ -3,10 +3,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import Accueil from "../containers/accueil"
-import Project from "../containers/project"
+import Portfolio from "../containers/portfolio"
 import Skills from "../containers/skills"
 import Contact from "../containers/contact"
-import Perso from "../containers/perso"
+import About from "../containers/about"
 import Hobbies from "../containers/hobbies"
 
 
@@ -24,13 +24,13 @@ const IndexPage = () => (
     </Helmet>
 
     <Accueil />
-    <Perso />
+    <About />    
     <Skills />
-    <Project />
+    <Portfolio />
     <Hobbies />
     <Contact />
+        
   </Layout>
-
 )
 
 export default IndexPage

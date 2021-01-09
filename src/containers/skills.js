@@ -23,42 +23,73 @@ const Skills = () => {
     <Bandeau title="Skills Set" subtitle="What I know" dark id="paaraSkills">
       <Container fluid>
         <Row className="m-4"></Row>
-        <Row data-aos="fade-up" className="m-5">
+        <Row
+          // data-aos="fade-up"
+          className="m-5"
+        >
           <Col sm className="text-center">
-            <Image
-              src={getPicturePath("python_mono.png")}
-              width="30%"
-              className="mb-3 mt-3"
-              tooltip="Python"
-            />
+            <Row className="justify-content-center">
+              <Image
+                src={getPicturePath("python_mono.png")}
+                width="30%"
+                className="mb-3 mt-3"
+              />
+            </Row>
+            <Row className="justify-content-center  mt-3 mb-2"
+            // data-aos="fade-up"
+            >
+              <span className="veryDarkT">Python</span>
+            </Row>
           </Col>
 
           <Col sm className="text-center">
-            <Image
-              src={getPicturePath("azure_mono.png")}
-              width="50%"
-              className="mb-3 mt-3"
-            />
+            <Row className="justify-content-center">
+              <Image
+                src={getPicturePath("azure_mono.png")}
+                width="50%"
+                className="mb-3 mt-3"
+              />
+            </Row>
+            <Row className="justify-content-center  mt-3 mb-2"
+            // data-aos="fade-up"
+            >
+              <span className="veryDarkT">Azure</span>
+            </Row>
           </Col>
 
           <Col sm className="text-center pl-4 pr-4">
-            <Image
-              src={getPicturePath("react_mono.png")}
-              width="30%"
-              className="mb-3 mt-3"
-            />
+            <Row className="justify-content-center">
+              <Image
+                src={getPicturePath("react_mono.png")}
+                width="30%"
+                className="mb-3 mt-3"
+              />
+            </Row>
+            <Row
+            className="justify-content-center  mt-3 mb-2"
+            // data-aos="fade-up"
+            >
+              <span className="veryDarkT">React JS</span>
+            </Row>
           </Col>
 
           <Col sm className="text-center">
-            <Image
-              src={getPicturePath("docker_mono.png")}
-              width="40%"
-              className="mb-3 mt-3"
-            />
+            <Row className="justify-content-center">
+              <Image
+                src={getPicturePath("docker_mono.png")}
+                width="40%"
+                className="mb-3 mt-3"
+              />
+            </Row>
+            <Row className="justify-content-center mt-3 mb-2"
+            // data-aos="fade-up"
+            >
+              <span className="veryDarkT">Docker</span>
+            </Row>
           </Col>
         </Row>
 
-        <Row data-aos="fade-up" className="ml-5 mr-5">
+        {/* <Row data-aos="fade-up" className="ml-5 mr-5">
           <Col sm className="text-center">
             <span className="veryDarkT">Python</span>
           </Col>
@@ -74,7 +105,7 @@ const Skills = () => {
           <Col sm className="text-center">
             <span className="veryDarkT">Docker</span>
           </Col>
-        </Row>
+        </Row> */}
 
         <Row className="m-5"></Row>
       </Container>
