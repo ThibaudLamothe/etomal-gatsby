@@ -4,8 +4,8 @@
     Power-Point Translation
   subtitle:
     A tool which extracts textual data from PowerPoint, translate them using DeepL through Selenium, and reinsert data keeping the original formatting.
-  text:
-    Lorem ipsum blablabla
+  # text:
+  #   Lorem ipsum blablabla
   tags:
     - Python
     - Automation
@@ -16,7 +16,7 @@
     github:
       - https://github.com/ThibaudLamothe/translate-pptx
     medium:
-      - https://github.com/ThibaudLamothe/translate-pptx
+      - https://towardsdatascience.com/using-selenium-and-deepl-to-automate-the-translation-of-power-point-files-3c01f81f113
 
 
 
@@ -26,8 +26,8 @@
     Scraping Corner
   subtitle:
     A repository where I host all my Scraping projects. There are a bunch of them, and I use to import the spiders from the different projects.
-  text:
-    Lorem ipsum blablabla
+  # text:
+  #   Lorem ipsum blablabla
   tags:
     - Python
     - Scraping
@@ -54,14 +54,12 @@
     - Website
   urls:
     github:
-      - https://github.com/ThibaudLamothe/scraping-corner
+      - https://github.com/ThibaudLamothe/dash-mapbox
     deployed:
       - https://covid-19-worldmap.herokuapp.com/
     medium:
-      - https://github.com/ThibaudLamothe/scraping-corner
-      - https://github.com/ThibaudLamothe/scraping-corner
-
-
+      - https://towardsdatascience.com/how-to-create-animated-scatter-maps-with-plotly-and-dash-f10bb82d357a
+  
 
 - project:
   pictPath: hhm.jpg
@@ -69,8 +67,6 @@
     HivaHoaMassage
   subtitle:
     A website designed with Gatsby and React for a masseuse.
-  text:
-    Lorem ipsum blablabla
   tags:
     - Website
     - Gatsby
@@ -82,13 +78,14 @@
 
 
 - project:
-  pictPath: smartbar.png
+  pictPath: cocktails_2.jpeg
+  # pictPath: cocktails.jpeg
+  # pictPath: bar.jpeg
+  # pictPath: smartbar.png
   title:
     Smart Bar Application
   subtitle:
-    An app to help me make fantastic cocktails taking into consiedation what I have within my bar and what my guests would like to enjoy.
-  text:
-    Lorem ipsum blablabla
+    A React app built to help making fantastic cocktails, depending on my guests wishes and the alcohol in my private bar. Recipe selection given selected types of ingredients and their availability and favorite recipes.
   tags:
     - Python
     - Flask

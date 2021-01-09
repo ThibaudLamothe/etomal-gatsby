@@ -14,7 +14,6 @@ export default function Portfolio() {
               pictPath
               title
               subtitle
-              text
               tags
               urls {
                 github
@@ -35,7 +34,6 @@ export default function Portfolio() {
           key={index}
           title={node.title}
           subtitle={node.subtitle}
-          text={node.text}
           pictPath={node.pictPath}
           urls={node.urls}
           tags={node.tags}
