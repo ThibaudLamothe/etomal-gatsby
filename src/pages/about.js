@@ -7,7 +7,7 @@ import CVHead from "../containers/cvhead"
 // import Hobbies from "../containers/hobbies"
 // import Contact from "../containers/contact"
 
-const CVPage = () => (
+const AboutPage = () => (
   <Layout>
     <br/><br/>
     <SEO title="CV | Thibaud LAMOTHE" />
@@ -19,4 +19,4 @@ const CVPage = () => (
   </Layout>
 
 )
-export default CVPage
+export default AboutPage

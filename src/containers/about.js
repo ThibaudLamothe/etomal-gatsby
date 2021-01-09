@@ -19,7 +19,7 @@ const About = () => {
         // data-aos="fade-up"
         className="d-flex flex-column align-items-center m-3"
       >
-        <Link to="/cv" className="pictProfile">
+        <Link to="/about" className="pictProfile">
           <div>
             {" "}
             See my
